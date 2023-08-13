@@ -1,0 +1,172 @@
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #E1F9F4;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 82px;
+}
+
+.white-box {
+    width: 546px;
+    height: 583px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-logo {
+    color: #4C57B6;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    word-wrap: break-word;
+    margin-top: 64px;
+    margin-bottom: 53px;
+    position: relative;
+}
+
+.txt-p {
+    color: black;
+    opacity: 0.60;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    word-wrap: break-word;
+    margin-bottom: 76px;
+}
+
+.user-id {
+    width: 450px;
+    height: 54px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.50px #E2E2E2 solid;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+::placeholder {
+    margin-left: 20px;
+    color: black;
+    opacity: 0.40;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    word-wrap: break-word
+}
+
+.password {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.50px #E2E2E2 solid;
+    width: 450px;
+    height: 54px;
+}
+
+.password-input {
+    margin-top: 1px;
+    width: 400px;
+    height: 48px;
+    outline: none;
+    border: 0;
+}
+
+.pass-icon {
+    position: absolute;
+    margin-right: 19.71px;
+    top: 20px;
+    right: 10px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.sign-in {
+    margin-top: 60px;
+    width: 450px;
+    height: 54px;
+    background-color: #4C57B6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-signin {
+    color: white;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    word-wrap: break-word;
+}
+
+.txt-signup {
+    color: #4C57B6;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    word-wrap: break-word;
+    margin-top: 31px;
+}
+
+.signup-navigator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 83px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.txt-p2 {
+    color: black;
+    opacity: 0.60;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    word-wrap: break-word;
+}
+
+
+.txt-signup2 {
+    color: #352D66;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    word-wrap: break-word;
+}
