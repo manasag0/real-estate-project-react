@@ -11,7 +11,7 @@ const  PageBasic= (props) => {
     const handleChildData2 = (data)=>{
         props.onData2({ property: data.property });
     }
-// console.log(props);    
+        
     return (
         <div className="home">
             <div className="side-nav">

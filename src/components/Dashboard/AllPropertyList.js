@@ -8,13 +8,11 @@ import { Link } from "react-router-dom";
 const AllpropertyList = () => {
 
     const [propertyList, updateList] = useState([])
-    // const [key,getKey]=useState("")
-    // const navigate=useNavigate()
-    // const [sold, setUnsold] = useState(true)
+
 
     useEffect(() => {
         getPropertyList()
-        // updateStatus()
+        
     },[])
 
     const getPropertyList = async () => {
@@ -93,7 +91,7 @@ const AllpropertyList = () => {
                                     ppid=ppid[0]
                                     return (
                                         <tr key={data._id}>
-                                            <td>{`PPD${+ppid+1000}`}</td>
+                                            <td>{`PPD${+ppid+10}`}</td>
                                             <td className="gray-color"><MdPhotoLibrary /></td>
                                             <td>{data.property}</td>
                                             <td>{data.contact}</td>
@@ -103,7 +101,7 @@ const AllpropertyList = () => {
                                             onClick={()=>{updateStatus(data._id)}}>
                                                 {data.status}
                                             </button></td>
-                                            <td>{parseInt(Math.random() *90 + 10)}</td>
+                                            <td>{parseInt(Math.random() * 90 + 10)}</td>
                                             <td><span className="gray-color action"><HiEye className="view-icon" /><MdModeEdit /></span></td>
                                         </tr>
                                     )

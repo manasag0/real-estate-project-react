@@ -1,23 +1,22 @@
 import { useState } from "react";
 import React from "react";
 import { useEffect } from "react";
-
 import "./Menubar.css"
 
 const Manubar = (props)=> {
 
   
-  //  console.log(props)
+  
     const [state,setState] = useState('');
-   function colorHandler(){
+    function colorHandler(){
     setState( window.location.href)
    }
-        //  console.log(state);
+        
          let state1 = false;
          let state2 = false;
          let state3 = false;
          let state4 = false;
-    // const [state,setState]= useState('');
+    
     if (state==="https://real-estate-prathmesh.netlify.app/basic") {
         state1 = true;
         state2 = false;
@@ -39,7 +38,7 @@ const Manubar = (props)=> {
          state3 = false;
         state4 = true;
     }
-// console.log(state1,state2,state3)
+
 useEffect(() => {
     colorHandler()
   },[ props]);

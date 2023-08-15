@@ -79,9 +79,7 @@ const GeneralInfo = (props) => {
 <section className="image"> <span className="vector"></span> </section>
             <section className="buttons" id="buttonsForGeneralInfo">
             <Link to='/details'>    <button className="button1"  onClick={handleClick}>Previous</button></Link>  
-                <Link to='/location'> <button className="button2"  onClick={handleClick} >Save & Continue</button></Link> 
-                {/* <button className="button1">Previous</button>
-                <button className="button2">Save & Continue</button> */}
+            <Link to='/location'> <button className="button2"  onClick={handleClick} >Save & Continue</button></Link> 
             </section>
         </>
     )

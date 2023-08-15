@@ -13,9 +13,7 @@ let blueColorUrl = window.location.href
     const handleClick = () => {
         props.onData1({ area: area ,colorUrl:blueColorUrl});
     };
-//    const  handleClick1 = () => {
-//         props.onData1({ area: area ,colorUrl:blueColorUrl});
-//     };
+
     
     return (
 
