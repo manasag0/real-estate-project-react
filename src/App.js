@@ -1,23 +1,51 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import Login from './components/login/Login'
-import SignUp from "./components/signup/SignUp";
-// import BasicInfo from "./components/propertyAdd/BasicInfo";
 
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Signin from './components/LoginRegister/Signin';
+import Signup from './components/LoginRegister/Signup';
+import Home from "./components/Dashboard/Home";
+import PageBasic from './components/AddPropertyPage/PageBasic';
+import PageProDetails from './components/AddPropertyPage/PagePropertDetails';
+import PageGenInfo from './components/AddPropertyPage/PageGenInfo';
+import PageLocationInfo from './components/AddPropertyPage/PageLocaInfo';
+import PrivateComponent from './components/AddPropertyPage/PrivateComponent';
+import { useState } from 'react';
 function App() {
+
+  const [property, setProperty] = useState("")
+  const [contact, setcontact] = useState("")
+  const [area, setArea] = useState('')
+  const handleChildData = (data) => {
+
+    setcontact(data.contact);
+
+  }
+  const handleChildData1 = (data) => {
+    setArea(data.area);
+
+  }
+  const handleChildData2 = (data) => {
+    setProperty(data.property);
+  }
   return (
-    <div className="App">
-        {/* <Login /> */}
-        <SignUp />
-        {/*<List />
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<PrivateComponent />}>
 
-        <BasicInfo />
-        <PropertyDetails />
-        <GeneralInfo />
-        <Location /> */}
-        {/* <BasicInfo /> */}
+            <Route path='/properties' element={<Home />} />
+            <Route path='/basic' element={<PageBasic onData2={handleChildData2} />} />
+            <Route path='/details' element={<PageProDetails onData1={handleChildData1} />} />
+            <Route path='/general' element={<PageGenInfo onData={handleChildData} />} />
+            <Route path='/location' element={<PageLocationInfo property={property} area={area} contact={contact} />} />
+          </Route>
 
-    </div>
+          <Route path='/' element={<Signin />} />
+          <Route path='/login' element={<Signin />} />
+          <Route path='/register' element={<Signup />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
