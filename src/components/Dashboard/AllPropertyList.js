@@ -82,7 +82,7 @@ const AllpropertyList = () => {
                             <td>Action</td>
                         </tr>
                     </thead>
-                    <tbody id="scrollbox">
+                    <tbody id="scrollbox" className="flex-container">
                         {
                             propertyList.length > 0 ?
                                 propertyList.map((data, index) => {
@@ -90,8 +90,8 @@ const AllpropertyList = () => {
                                     ppid=ppid.match(/\d+/g)
                                     ppid=ppid[0]
                                     return (
-                                        <tr key={data._id}>
-                                            <td>{`PPD${+ppid+10}`}</td>
+                                        <tr key={data._id} >
+                                            <td>{`PPD${+ppid+100}`}</td>
                                             <td className="gray-color"><MdPhotoLibrary /></td>
                                             <td>{data.property}</td>
                                             <td>{data.contact}</td>
@@ -114,8 +114,6 @@ const AllpropertyList = () => {
                     }
                     </tbody>
                 </table>
-
-
             </div>
         </div>
     )

@@ -17,22 +17,22 @@ const Manubar = (props)=> {
          let state3 = false;
          let state4 = false;
     
-    if (state==="https://real-estate-prathmesh.netlify.app/basic") {
+    if (state==="https://64dbb5e89ab0da0b2cb90c7f--inquisitive-donut-effefd.netlify.app/basic") {
         state1 = true;
         state2 = false;
         state3 = false;
        state4 = false;
-      } else if  (state==="https://real-estate-prathmesh.netlify.app/details") {
+      } else if  (state==="https://64dbb5e89ab0da0b2cb90c7f--inquisitive-donut-effefd.netlify.app/details") {
         state1 = false;
         state2 = true;
         state3 = false;
        state4 = false;
-      } else if  (state==="https://real-estate-prathmesh.netlify.app/general") {
+      } else if  (state==="https://64dbb5e89ab0da0b2cb90c7f--inquisitive-donut-effefd.netlify.app/general") {
         state1 = false;
         state2 = false;
         state3 = true;
        state4 = false;
-      } else if(state==="https://real-estate-prathmesh.netlify.app/location"){
+      } else if(state==="https://64dbb5e89ab0da0b2cb90c7f--inquisitive-donut-effefd.netlify.app/location"){
         state1 = false;
          state2 = false;
          state3 = false;

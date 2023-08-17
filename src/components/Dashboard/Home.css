@@ -155,11 +155,15 @@ body {
 
 /* all property lists @@@@@ */
 .property-lists table {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   margin: 0 0.6rem 0 3rem ;
   flex-direction: column;
+  display: inline-table;
+  width: 95%;
 }
+
+
 .property-lists table tr td{
   text-align: center;
 }
@@ -184,17 +188,20 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #afeee1;
 }
+
 .property-lists tr{
   display: flex;
+  cursor: pointer;
+  justify-content:space-between;
   height: 3rem;
   background-color: #ffffff;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-radius: 0.8rem 0.8rem;
   padding: 0 2rem;
   margin-bottom: 0.5rem;
+  border-radius: 0.8rem 0.8rem;
 }
+
 .property-lists thead tr:first-child {
   font-family: Source Sans Pro;
   font-weight: 400;
@@ -202,16 +209,15 @@ body {
   font-size: 15px;
 }
 .no-data-msg td{
-padding-left: 430px;
-font-size: larger;
-color: red;
-font-weight: 700;
+  padding-left: 430px;
+  font-size: larger;
+  color: red;
+  font-weight: 700;
 }
 .gray-color {
   color: #c3c3c3;
 }
 .action{
-  /* padding-left: 40px; */
   width: 100%;
   cursor: pointer;
 }
@@ -227,4 +233,8 @@ font-weight: 700;
   outline: none;
   color: #416899;
   cursor: pointer;
+}
+
+tbody {
+  white-space: nowrap;
 }
