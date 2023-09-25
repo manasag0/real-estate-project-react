@@ -16,4 +16,4 @@ const Sidenav=()=>{
         </>
     )
 }
-export default Sidenav
+export default Sidenav;

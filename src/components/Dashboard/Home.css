@@ -190,9 +190,9 @@ body {
 }
 
 .property-lists tr{
-  display: flex;
+  /* display: flex; */
   cursor: pointer;
-  justify-content:space-between;
+  /* justify-content:space-between; */
   height: 3rem;
   background-color: #ffffff;
   align-items: center;
@@ -235,6 +235,25 @@ body {
   cursor: pointer;
 }
 
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
 tbody {
   white-space: nowrap;
+}
+
+tbody tr td {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+thead tr td {
+  border-radius: 10px;
+  margin: 10px;
+  height: 2.8rem;
+  font-size: x-large;
 }

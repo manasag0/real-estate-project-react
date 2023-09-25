@@ -97,7 +97,7 @@ const AllpropertyList = () => {
                                             <td>{data.contact}</td>
                                             <td>{data.area}</td>
                                             <td>{data.views}</td>
-                                            <td><button className="action-btn" 
+                                            <td className="status"><button className="action-btn" 
                                             onClick={()=>{updateStatus(data._id)}}>
                                                 {data.status}
                                             </button></td>
